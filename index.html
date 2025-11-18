@@ -6,16 +6,7 @@
     <title>Muyiwa Idowu | Portfolio & Blog</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom scrollbar for aesthetics */
-        body::-webkit-scrollbar {
-            width: 8px;
-        }
-        body::-webkit-scrollbar-thumb {
-            background-color: #3b82f6;
-            border-radius: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
@@ -23,7 +14,7 @@
     <header class="shadow-md bg-white sticky top-0 z-10">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-2xl font-extrabold text-indigo-600 tracking-tight">
-                Muyiwa Idowu <span class="text-sm text-gray-400">/ Developer</span>
+                Muyiwa Idowu <span class="text-sm text-gray-400">/ Engineer</span>
             </h1>
             <nav class="space-x-4">
                 <a href="#about" class="text-gray-600 hover:text-indigo-500 transition duration-200">About</a>
@@ -36,14 +27,16 @@
     <!-- Hero Section -->
     <section id="hero" class="py-20 bg-indigo-50">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <img src="https://placehold.co/120x120/a5b4fc/ffffff?text=JD" 
+            <!-- Source is now set to 'profile.jpeg'. If your file is profile.jpg, we will change it back later. -->
+            <img src="img/profile.jpg" 
+                 onerror="this.onerror=null; this.src='https://placehold.co/128x128/9CA3AF/FFFFFF?text=MI'"
                  alt="Muyiwa Idowu Profile Picture" 
                  class="w-32 h-32 rounded-full mx-auto mb-6 object-cover border-4 border-white shadow-lg">
             <h2 class="text-5xl font-bold text-gray-900 mb-4 leading-tight">
-                Hi, I'm Muyiwa. <span class="text-indigo-600">I program, solve technical issues.</span>
+                Hi, I'm Muyiwa. <span class="text-indigo-600">I program and solve technical issues.</span>
             </h2>
             <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                Welcome to my digital space. I'm a Computer Engineer passionate about delivering optimal solutions; collaborating with diverse teams to identify and solve complex technical problems. My work involves troubleshooting, repair, and testing of computer systems and software applications, combining my knowledge of hardware and software to create innovative solutions and thoughtful user experiences.
+                Welcome to my digital space. I'm that friendly neighborhood tech guy passionate about delivering optimal solutions. My work majorly involves troubleshooting, repair, and testing of computer systems and software applications, combining my knowledge of hardware and software to create innovative and thoughtful user experiences.
             </p>
             <a href="#projects" class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-105 inline-flex items-center space-x-2">
                 View My Work
@@ -62,8 +55,8 @@
         <section id="about" class="mb-16">
             <h3 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 border-indigo-200 pb-2">About Me</h3>
             <div class="text-lg space-y-4 text-gray-700">
-                <p>I started coding during a high school hackathon and quickly fell in love with turning complex problems into elegant software solutions. My expertise lies in front-end development using modern frameworks, but I'm equally comfortable diving into backend logic and database design.</p>
-                <p>When I'm not writing code, you can find me hiking local trails, trying out new baking recipes, or contributing to open-source projects. I believe continuous learning is key to success in the tech world.</p>
+                <p>I started coding during covid and quickly fell in love with turning complex problems into elegant software solutions. My expertise lies in front-end development using modern frameworks.</p>
+                <p>When I'm not writing code, you can find me reading books or doomscrolling on social media, watching new tutorials, or contributing to open-source projects. I believe continuous learning is key to success in the tech world.</p>
             </div>
         </section>
 
@@ -113,7 +106,7 @@
                 <a href="https://linkedin.com/in/muyiwa-idowu" target="_blank" class="bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-blue-800 transition duration-200">
                     LinkedIn
                 </a>
-                <a href="https://github.com/Toughreadline" target="_blank" class="bg-gray-800 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-gray-900 transition duration-200">
+                <a href="https://github.com/muyiwadoes" target="_blank" class="bg-gray-800 text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-gray-900 transition duration-200">
                     GitHub
                 </a>
             </div>

@@ -1,0 +1,98 @@
+
+        :root{
+    /* Color palette complementary to Tailwind Indigo */
+    --indigo-600: #4f46e5;
+    --indigo-700: #4338ca;
+    --indigo-50: #eef2ff;
+    --muted: #6b7280;
+    --card-bg: #ffffff;
+    --border: #e6e9ef;
+    --glass: rgba(255,255,255,0.6);
+}
+
+/* Base typography tweaks */
+html,body{
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                 Roboto, "Helvetica Neue", Arial;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.6;
+    color:var(--muted);
+    background-color: #f8fafc; /* slight off-white to match Tailwind bg-gray-50 */
+}
+
+/* Links & buttons fallback styles (works alongside Tailwind) */
+a {
+    color: var(--indigo-600);
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: var(--indigo-700);
+    outline: none;
+    text-decoration: underline;
+}
+
+/* Focus-visible for keyboard accessibility */
+:focus-visible {
+    outline: 3px solid rgba(79,70,229,0.12);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* Header tweaks */
+header h1 { letter-spacing: -0.02em; }
+header nav a { font-weight: 600; }
+
+/* Hero adjustments */
+#hero {
+    background-image: linear-gradient(180deg, rgba(79,70,229,0.02), transparent 60%);
+}
+
+/* Profile image polish */
+#hero img {
+    border-color: #ffffff;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+#hero img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 36px rgba(15,23,42,0.12);
+}
+
+/* Card surface improvements */
+section#projects .bg-white {
+    background: linear-gradient(180deg, rgba(255,255,255,0.98), var(--card-bg));
+    border-color: var(--border);
+}
+
+/* Small utility helpers */
+.kicker {
+    color: var(--indigo-600);
+    font-weight: 700;
+    font-size: .875rem;
+}
+
+/* Footer */
+footer {
+    color: #52525b;
+    background: linear-gradient(180deg, rgba(243,244,246,0.6), rgba(243,244,246,1));
+}
+
+/* Responsive typography (fine tune for larger screens) */
+@media (min-width: 1024px) {
+    #hero h2 { font-size: 3.25rem; } /* slightly smaller than inline Tailwind 5xl for better balance */
+    main { padding-left: 0; padding-right: 0; }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+/* Print friendliness */
+@media print {
+    header, footer, .no-print { display: none !important; }
+    body { background: #fff; color: #111827; }
+}
